@@ -21,7 +21,7 @@ public class Item extends BaseEntityuuid {
     public String name;
     public String description;
     public BigDecimal price;
-  //  public Category category;
+public Category category;
     public Gender gender;
 
 
@@ -54,7 +54,7 @@ public class Item extends BaseEntityuuid {
         this.price = price;
         return this;
     }
-  /*  @ManyToOne
+ @ManyToOne
     @JoinColumn(name = "category_id")
     public Category getCategory() {
         return category;
@@ -63,7 +63,7 @@ public class Item extends BaseEntityuuid {
     public Item setCategory(Category category) {
         this.category = category;
         return this;
-    }*/
+    }
 
     @Enumerated(EnumType.STRING)
     public Gender getGender() {
